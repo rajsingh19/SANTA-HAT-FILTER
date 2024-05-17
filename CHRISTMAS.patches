@@ -1,0 +1,89 @@
+{
+  "id": "8393600915eacdc776418a9d7e29e1a6fe94d1",
+  "revision": "8393610915eacdc776418a9d7e29e1a6fe94d1",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 181
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 181
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:915523-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "fromPatch": "template_patch_model:915286-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:915521-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:915525-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "fromPatch": "template_patch_model:915521-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "fromPort": "100",
+        "toPatch": "consumer_patch_model:915284-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "toPort": "101"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:839448-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "subpatches": [
+          "consumer_patch_model:915284-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+          "template_patch_model:915286-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+          "template_patch_model:915521-0915eacd-c776-418a-9d7e-29e1a6fe94d1"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "consumer_patch_model",
+        "name": "emitter0",
+        "identifier": "consumer_patch_model:915284-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "object": "emitter:914370-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "objectProperty": "visible",
+        "position": [
+          308,
+          68
+        ],
+        "values": [
+          {
+            "port": "101",
+            "value": {
+              "t": "bool",
+              "v": true
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Screen Tap",
+        "identifier": "template_patch_model:915286-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "position": [
+          68,
+          68
+        ],
+        "templateId": "builtin.tapGesture"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Switch",
+        "identifier": "template_patch_model:915521-0915eacd-c776-418a-9d7e-29e1a6fe94d1",
+        "position": [
+          188,
+          140
+        ],
+        "templateId": "builtin.toggle"
+      }
+    ]
+  }
+}
